@@ -1,0 +1,46 @@
+.cls-1 {
+    fill: #f2f2f2;
+}
+
+.cls-2 {
+    fill: #b3b3b3;
+}
+
+.cls-3,
+.cls-6 {
+    fill: red;
+}
+
+.cls-4,
+.cls-5 {
+    fill: #fff;
+}
+
+.cls-4,
+.cls-7 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 0.25px;
+}
+
+.cls-6 {
+    font-size: 160.53px;
+    font-family: MyriadPro-Regular, Myriad Pro;
+}
+
+.cls-7 {
+    font-size: 85px;
+    font-family: Seravek, Seravek;
+}
+
+.cls-8 {
+    letter-spacing: -0.02em;
+}
+
+.cls-9 {
+    letter-spacing: 0em;
+}
+
+.cls-10 {
+    fill: #ffe100;
+}
