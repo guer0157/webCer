@@ -1,3 +1,4 @@
+/*tablero original*/
 .cls-1 {
     fill: #f2f2f2;
 }
@@ -43,4 +44,17 @@
 
 .cls-10 {
     fill: #ffe100;
+    animation-name: testigo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+@keyframes testigo{
+    0% {opacity: 1.0;}
+    50% {opacity: 0;}
+    100% {opacity: 1.0;}
+}
+/*---------------------------------------------*/
+
+/*Tablero cambios*/
+
