@@ -55,8 +55,19 @@
     100% {opacity: 1.0;}
 }
 /*---------------------------------------------*/
-
+/*Header*/
+#header{
+    display: 
+    width: 100%;
+}
 /*Tablero cambios*/
 svg{
     width: 30rem;
+    flex-direction: row-reverse;
+    padding-left: 27rem;
+}
+/*logo*/
+#logo{
+    width:30rem;
+    transform: translateZ(45deg)
 }
