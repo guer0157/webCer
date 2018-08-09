@@ -1,6 +1,7 @@
 /*Header*/
 #header{
     display: inline;
+    align-items: center;
     width: 100%;
 }
 /*tablero original*/
@@ -76,6 +77,7 @@ svg{
 }
 /*body*/
 #container-services{
+    position: absolute;
     border-top: solid 1px skyblue;
     background-color: dodgerblue;
 }
@@ -84,14 +86,11 @@ h1{
     color: white;
 }
 #align-c{
-    margin:0 auto;
-    height: 21rem;
+    position: relative;
+   align-items: center;
 }
 ul#serv{
-    height: 16rem;
-    display: block;
-    padding: 1rem;
-    margin:0 20rem;
+ width: 100%;
 }
 li#text1, li#img1{
     width: 40%;
@@ -103,7 +102,7 @@ li#text1, li#img1{
 li>p, li>h3{
     color: white;
 }
-li#opts{
+li{
     list-style: none;
 }
 ul#opts-container{
