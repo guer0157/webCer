@@ -1,4 +1,12 @@
+/*Header*/
+#header{
+    display: inline;
+    width: 100%;
+}
 /*tablero original*/
+#tab{
+padding: 0;    
+}
 .cls-1 {
     fill: #f2f2f2;
 }
@@ -55,11 +63,7 @@
     100% {opacity: 1.0;}
 }
 /*---------------------------------------------*/
-/*Header*/
-#header{
-    display: inline;
-    width: 100%;
-}
+
 /*Tablero cambios*/
 svg{
     width: 30rem;
@@ -70,15 +74,52 @@ svg{
 #logo{
     width:30rem;
 }
-/*li*/
-#serv{
-    display: flex;
-}
+/*body*/
 #container-services{
+    border-top: solid 1px skyblue;
+    background-color: dodgerblue;
 }
-li{
-    display: inline;
+h1{
+    text-align: center;
+    color: white;
+}
+#align-c{
+    margin:0 auto;
+    height: 21rem;
+}
+ul#serv{
+    height: 16rem;
+    display: block;
+    padding: 1rem;
+    margin:0 20rem;
+}
+li#text1, li#img1{
+    width: 40%;
     float: left;
     list-style: none;
-    width: 40%;
+    padding: 0 1rem;
+    
+}
+li>p, li>h3{
+    color: white;
+}
+li#opts{
+    list-style: none;
+}
+ul#opts-container{
+    position:relative;
+    padding: 0 1rem;
+    margin: 0 43rem;
+}
+li#op1, li#op2{
+    display: block;
+    float: left;
+    list-style: none;
+    width: 5px;
+    height: 5px;
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid gold;
+    border-radius: 50%;
+    
 }
