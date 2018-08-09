@@ -57,7 +57,7 @@
 /*---------------------------------------------*/
 /*Header*/
 #header{
-    display: 
+    display: inline;
     width: 100%;
 }
 /*Tablero cambios*/
@@ -70,5 +70,15 @@ svg{
 #logo{
     width:30rem;
 }
-
-
+/*li*/
+#serv{
+    display: flex;
+}
+#container-services{
+}
+li{
+    display: inline;
+    float: left;
+    list-style: none;
+    width: 40%;
+}
