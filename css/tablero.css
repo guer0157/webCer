@@ -83,3 +83,34 @@ svg{
 h1{
     text-align: center;
 }
+#align-c{
+    text-align: center;
+}
+#serv{
+    display: inline-block;
+}
+li#text1, li#img1{
+    width: 40%;
+    display: inline-block;
+    list-style: none;
+}
+li#text1{
+    
+}
+h3{
+    margin: 0;
+}
+#slide{
+    text-align: center;
+}
+ul#opts-container{
+  display: inline-block;  
+}
+.switch{
+    display: inline-block;
+    border: 1px gold solid;
+    width: 4px;
+    height: 4px;
+    border-radius: 25%;
+    list-style: none;
+}
