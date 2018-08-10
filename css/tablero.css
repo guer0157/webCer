@@ -63,7 +63,6 @@ padding: 0;
     50% {opacity: 0;}
     100% {opacity: 1.0;}
 }
-/*---------------------------------------------*/
 
 /*Tablero cambios*/
 svg{
@@ -77,48 +76,10 @@ svg{
 }
 /*body*/
 #container-services{
-    position: absolute;
+    text-align: center;
     border-top: solid 1px skyblue;
     background-color: dodgerblue;
 }
 h1{
     text-align: center;
-    color: white;
-}
-#align-c{
-    position: relative;
-   align-items: center;
-}
-ul#serv{
- width: 100%;
-}
-li#text1, li#img1{
-    width: 40%;
-    float: left;
-    list-style: none;
-    padding: 0 1rem;
-    
-}
-li>p, li>h3{
-    color: white;
-}
-li{
-    list-style: none;
-}
-ul#opts-container{
-    position:relative;
-    padding: 0 1rem;
-    margin: 0 43rem;
-}
-li#op1, li#op2{
-    display: block;
-    float: left;
-    list-style: none;
-    width: 5px;
-    height: 5px;
-    padding: 4px;
-    margin: 4px;
-    border: 1px solid gold;
-    border-radius: 50%;
-    
 }
