@@ -2,16 +2,17 @@
     <defs>
         <style>
             .cls-1,.cls-2{
-            fill:#ed1c24;
+            fill:white;
             }
             .cls-2{
-            stroke:#fff;
+            stroke:white;
             stroke-miterlimit:10;
             stroke-width:0.25px;
             }
             .cls-3{
+            fill:#1E90FF;
     animation-name: llave;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
             }
