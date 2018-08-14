@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif');
 /*Header*/
+body{
+    margin: 0;
+}
 #header{
     text-align: center;
     width: 100%;
@@ -90,7 +93,6 @@ svg{
 /*body*/
 .container{
     text-align: center;
-    border-top: solid 1px skyblue;
 }
 .one{
     background-color: dodgerblue;
