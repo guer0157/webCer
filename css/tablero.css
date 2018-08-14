@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif');
 /*Header*/
 #header{
-    display: inline;
-    align-items: center;
+    text-align: center;
     width: 100%;
+    background-color: #150811;
+}
+div#head-container{
+    display: inline-block;
+    padding: 3rem;ß
 }
 /*tablero original*/
 #tab{
-padding: 0;    
+padding-left: 5rem;    
 }
 .cls-1 {
     fill: #f2f2f2;
@@ -41,10 +46,12 @@ padding: 0;
 .cls-7 {
     font-size: 85px;
     font-family: Seravek, Seravek;
+    fill:white;
 }
 
 .cls-8 {
     letter-spacing: -0.02em;
+    fill: white;
 }
 
 .cls-9 {
@@ -66,24 +73,41 @@ padding: 0;
 
 /*Tablero cambios*/
 svg{
-    width: 30rem;
     flex-direction: row-reverse;
-    padding-left: 27rem;
+    height: 15rem;
+}
+#rescer{
+    height: 15rem;
+}
+#residencial{
+    height: 8rem;
 }
 /*logo*/
 #logo{
-    width:30rem;
+    height: 10rem;
+    position: relative;
 }
 /*body*/
-#container-services{
+.container{
     text-align: center;
     border-top: solid 1px skyblue;
+}
+.one{
     background-color: dodgerblue;
 }
-h1{
-    text-align: center;
+.two{
+    padding-top: 3rem;
+    background-color: white;
 }
-#align-c{
+h1{
+    font-family: "Noto Serif", "serif";
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 2rem;
+}
+.slide-block{
     text-align: center;
 }
 #serv{
@@ -95,22 +119,50 @@ li#text1, li#img1{
     list-style: none;
 }
 li#text1{
+    text-align: left;
+    vertical-align: top;
+    color: white;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+}
+li#text2, li#img2{
+    width: 40%;
+    display: inline-block;
+    list-style: none;
+}
+li#text2{
+    text-align: left;
+    vertical-align:top;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
     
+}
+#vwJetta{
+    width: 100%
 }
 h3{
     margin: 0;
+    letter-spacing: 2px;
 }
 #slide{
     text-align: center;
 }
 ul#opts-container{
-  display: inline-block;  
+  display: inline-block;
+padding-left: 0;
 }
 .switch{
     display: inline-block;
-    border: 1px gold solid;
-    width: 4px;
-    height: 4px;
-    border-radius: 25%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
     list-style: none;
+    margin-left: .5rem;
+}
+#op1, #op2, #op3, #op4{
+    background-color: black;
+    opacity: .2;
+}
+.switch:hover{
+    transform: scale(1.5,1.5);
 }

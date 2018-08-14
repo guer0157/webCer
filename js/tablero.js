@@ -10,11 +10,12 @@ let app={
     let ids=ev.currentTarget.getAttribute("id");
         switch(ids){
             case "op1":
-            (document.getElementById("op1").style.backgroundColor="white")&&(document.getElementById("op2").style.backgroundColor="transparent");
+            (document.getElementById("op1").classList.add("clicked"))&&(document.getElementById("op2").classList.toggle("clicked"));
                 app.showText1()
                 break;
             case "op2":
-        (document.getElementById("op2").style.backgroundColor="white")&&(document.getElementById("op1").style.backgroundColor="transparent")
+        document.getElementById("op2").style.backgroundColor="white"
+//                &&(document.getElementById("op1").style.backgroundColor="transparent")
                 app.showText2();
                 break;
         }
