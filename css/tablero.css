@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif');
 /*Header*/
+html{
+    overflow-x: hidden;
+}
 body{
     margin: 0;
 }
@@ -16,64 +19,6 @@ div#head-container{
 #tab{
 padding-left: 5rem;    
 }
-.cls-1 {
-    fill: #f2f2f2;
-}
-
-.cls-2 {
-    fill: #b3b3b3;
-}
-
-.cls-3,
-.cls-6 {
-    fill: red;
-}
-
-.cls-4,
-.cls-5 {
-    fill: #fff;
-}
-
-.cls-4,
-.cls-7 {
-    stroke: #000;
-    stroke-miterlimit: 10;
-    stroke-width: 0.25px;
-}
-
-.cls-6 {
-    font-size: 160.53px;
-    font-family: MyriadPro-Regular, Myriad Pro;
-}
-
-.cls-7 {
-    font-size: 85px;
-    font-family: Seravek, Seravek;
-    fill:white;
-}
-
-.cls-8 {
-    letter-spacing: -0.02em;
-    fill: white;
-}
-
-.cls-9 {
-    letter-spacing: 0em;
-}
-
-.cls-10 {
-    fill: #ffe100;
-    animation-name: testigo;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes testigo{
-    0% {opacity: 1.0;}
-    50% {opacity: 0;}
-    100% {opacity: 1.0;}
-}
-
 /*Tablero cambios*/
 #nav-menu{
     align-content: center;
@@ -113,12 +58,14 @@ svg{
 .container{
     text-align: center;
 }
+
 .one{
     background-color: dodgerblue;
 }
 .two{
-    padding-top: 3rem;
-    background-color: white;
+    position: absolute;
+    top: 445px;
+    left: 100%;
 }
 h1{
     font-family: "Noto Serif", "serif";
@@ -131,7 +78,15 @@ h1{
 .slide-block{
     text-align: center;
 }
-#serv{
+.translate{
+    display: inline-block;
+    padding-left: 0;
+}
+.translate2{
+    display: inline-block;
+    padding-left: 0;
+}
+#serv2{
     display: inline-block;
 }
 li#text1, li#img1{
@@ -173,6 +128,10 @@ ul#opts-container{
 padding-left: 0;
 }
 .switch{
+    background-color: black;
+    opacity: .2;
+}
+#op1, #op2, #op3, #op4{
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -180,12 +139,22 @@ padding-left: 0;
     list-style: none;
     margin-left: .5rem;
 }
-#op1, #op2, #op3, #op4{
-    background-color: black;
-    opacity: .2;
-}
 .switch:hover{
     transform: scale(1.5,1.5);
+}
+
+.clicked{
+    transform: scale(1.5,1.5);
+    background-color: white;
+    opacity: .2;
+}
+#serv{
+    transition: transform ease-out 2s;
+    transform: translateX(100%);
+}
+#serv2{
+    transition: transform ease-out 2s;
+    transform: translateX(0%);
 }
 /*Footer*/
 #footer{

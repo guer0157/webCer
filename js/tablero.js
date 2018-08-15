@@ -1,6 +1,6 @@
 let app={
     init: function(){
-        
+    let ulContent=document.getElementById
     let btns=document.querySelectorAll(".switch");
     btns.forEach(swt=>{
         swt.addEventListener("click", app.getId);
@@ -8,23 +8,28 @@ let app={
     },
     getId: function(ev){
     let ids=ev.currentTarget.getAttribute("id");
+        console.log(ids);
         switch(ids){
             case "op1":
-            (document.getElementById("op1").classList.add("clicked"))&&(document.getElementById("op2").classList.toggle("clicked"));
+            (document.getElementById("op1").className="clicked")&&(document.getElementById("op2").className="switch");
+                console.log("Op1: Worked");
                 app.showText1()
                 break;
             case "op2":
-        document.getElementById("op2").style.backgroundColor="white"
-//                &&(document.getElementById("op1").style.backgroundColor="transparent")
+         (document.getElementById("op2").className="clicked")&&(document.getElementById("op1").className="switch");
+                console.log("Op2: Worked");
                 app.showText2();
                 break;
         }
 },
     showText1: function(){
-        console.log("This is text 1")
+        
     },
     showText2: function(){
-        console.log("this is text 2")
+        let ulTranslate=document.querySelector(".translate");
+        ulTranslate.setAttribute("id","serv");
+        let ulTranslate=document.querySelector(".translat2");
+        ulTranslate.setAttribute("id","serv2");
     }
 }
 document.addEventListener("DOMContentLoaded", app.init);
