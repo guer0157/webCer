@@ -75,6 +75,25 @@ padding-left: 5rem;
 }
 
 /*Tablero cambios*/
+#nav-menu{
+    align-content: center;
+}
+#nav-list{
+    padding-left: 0;
+}
+#bienvenido, #contacto, #preguntas{
+    list-style: none;
+    display: inline-block;
+    padding: 0 1rem;
+}
+#bienvenido, #contacto{
+    border-right: solid .5px dodgerblue;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Noto Serif", "serif";
+}
 svg{
     flex-direction: row-reverse;
     height: 15rem;
@@ -167,4 +186,8 @@ padding-left: 0;
 }
 .switch:hover{
     transform: scale(1.5,1.5);
+}
+/*Footer*/
+#footer{
+    background-color: #150811;
 }
