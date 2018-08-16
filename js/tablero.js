@@ -23,13 +23,18 @@ let app={
         }
 },
     showText1: function(){
-        
+        let ulTranslate=document.querySelector(".translate");
+        ulTranslate.removeAttribute("id");
+        ulTranslate.setAttribute("id","normalPos")
+        let ulTranslate2=document.querySelector(".translate2");
+        ulTranslate2.setAttribute("id", "normalPos");
     },
     showText2: function(){
         let ulTranslate=document.querySelector(".translate");
         ulTranslate.setAttribute("id","serv");
-        let ulTranslate=document.querySelector(".translat2");
-        ulTranslate.setAttribute("id","serv2");
+        let ulTranslate2=document.querySelector(".translate2");
+
+        ulTranslate2.setAttribute("id","serv");
     }
 }
 document.addEventListener("DOMContentLoaded", app.init);

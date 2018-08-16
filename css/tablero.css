@@ -1,30 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif');
 /*Header*/
 html{
-/*    overflow-x: hidden;*/
+    overflow-x: hidden;
+    background-image: url("../img/bground.png");
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 body{
     margin: 0;
 }
 #header{
+    background-color: rgba(0, 0,0, .7);
     text-align: center;
     width: 100%;
-    background-color: #150811;
+    height: 30rem;
 }
 div#head-container{
-    display: inline
+    display: inline-block;
     padding: 3rem;
+    margin-top: 8rem;
 }
 /*tablero original*/
 #tab{
-padding-left: 5rem;    
+    height: 15rem;
+    padding-left: 5rem;
 }
 /*Tablero cambios*/
 #nav-menu{
     align-content: center;
 }
-#nav-list{
-    padding-left: 0;
+ul#nav-list{
+    background-color: white;
+    padding: 1rem 0;
+    margin: 0;
 }
 #bienvenido, #contacto, #preguntas{
     list-style: none;
@@ -39,15 +47,8 @@ a{
     color: black;
     font-family: "Noto Serif", "serif";
 }
-svg{
-    flex-direction: row-reverse;
-    height: 15rem;
-}
 #rescer{
     height: 15rem;
-}
-#residencial{
-    height: 8rem;
 }
 /*logo*/
 #logo{
@@ -62,9 +63,10 @@ svg{
 .one{
     background-color: dodgerblue;
 }
-.two{
-    float: left;
-    
+div.slide-block.two{
+    position: absolute;
+    top:24.8rem;
+    transform: translateX(100%);
 }
 h1{
     font-family: "Noto Serif", "serif";
@@ -77,6 +79,7 @@ h1{
 .slide-block{
     text-align: center;
 }
+
 .translate{
     display: inline-block;
     padding-left: 0;
@@ -110,7 +113,11 @@ li#text2{
     vertical-align:top;
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
+    padding-left: 3rem;
     
+}
+li#img2,{
+    text-align: left;
 }
 #vwJetta{
     width: 100%
@@ -149,9 +156,9 @@ padding-left: 0;
 }
 #serv{
     transition: transform ease-out 2s;
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
-#serv2{
+#normalPos{
     transition: transform ease-out 2s;
     transform: translateX(0%);
 }
