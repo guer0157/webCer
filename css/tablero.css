@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif');
 /*Header*/
 html{
-    overflow-x: hidden;
+/*    overflow-x: hidden;*/
 }
 body{
     margin: 0;
@@ -12,8 +12,8 @@ body{
     background-color: #150811;
 }
 div#head-container{
-    display: inline-block;
-    padding: 3rem;ß
+    display: inline
+    padding: 3rem;
 }
 /*tablero original*/
 #tab{
@@ -63,9 +63,8 @@ svg{
     background-color: dodgerblue;
 }
 .two{
-    position: absolute;
-    top: 445px;
-    left: 100%;
+    float: left;
+    
 }
 h1{
     font-family: "Noto Serif", "serif";
