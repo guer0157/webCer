@@ -162,6 +162,26 @@ padding-left: 0;
     transition: transform ease-out 2s;
     transform: translateX(0%);
 }
+/*Valores*/
+#valores{
+    text-align: center;
+}
+ul.sec3{
+    padding-left: 0;
+    text-align: center;
+}
+li.values{
+    width: 30%;
+    list-style: none;
+    display: inline-block;
+}
+img.valImg{
+    width: 20rem;
+    display: inline-block;
+}
+p.vText{
+    display: inline-block;
+}
 /*Footer*/
 #footer{
     background-color: #150811;
