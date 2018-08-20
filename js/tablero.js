@@ -27,14 +27,14 @@ let app={
         ulTranslate.removeAttribute("id");
         ulTranslate.setAttribute("id","normalPos")
         let ulTranslate2=document.querySelector(".translate2");
-        ulTranslate2.setAttribute("id", "normalPos");
+        ulTranslate2.setAttribute("id","backtoNormal")
     },
     showText2: function(){
         let ulTranslate=document.querySelector(".translate");
         ulTranslate.setAttribute("id","serv");
         let ulTranslate2=document.querySelector(".translate2");
 
-        ulTranslate2.setAttribute("id","serv");
+        ulTranslate2.setAttribute("id","normalPos");
     }
 }
 document.addEventListener("DOMContentLoaded", app.init);

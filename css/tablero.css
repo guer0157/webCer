@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif');
 /*Header*/
 html{
-/*    overflow-x: hidden;*/
+    overflow-x: hidden;
     background-image: url("../img/bground.png");
     background-repeat: no-repeat;
     background-position: right top;
@@ -62,13 +62,15 @@ a{
 .one{
     background-color: dodgerblue;
 }
-h1{
+h1, h2#otros{
     font-family: "Noto Serif", "serif";
     letter-spacing: 2px;
-    color: white;
     text-align: center;
     margin-top: 0;
     padding-top: 2rem;
+}
+h1{
+color: white;
 }
 .translate{
     width: 100%;
@@ -79,7 +81,7 @@ h1{
 .translate2{
     position: absolute;
     top:38.6rem;
-    transform: translateX(200%);
+    transform: translateX(100%);
     width: 100%;
     padding-left: 0;
 }
@@ -108,17 +110,18 @@ li#text2, li#img2{
     list-style: none;
 }
 li#img2{
+    width: 60%;
     text-align: left;
 }
 li#text2{
-    width: 40%;
+    width: 30%;
     text-align: left;
     vertical-align:top;
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
     color: white;
 }
-li#text1>p{
+li#text1>p, li#text2>p{
     line-height: 2rem;
 }
 li#text1>h3, li#text2>h3{
@@ -166,6 +169,10 @@ padding-left: 0;
     transition: transform ease-out 2s;
     transform: translateX(-100%);
 }
+#backtoNormal{
+   transition: transform ease-out 2s;
+    transform: translateX(100%); 
+}
 #normalPos{
     transition: transform ease-out 2s;
     transform: translateX(0%);
@@ -175,23 +182,44 @@ section#valores{
     text-align: center;
 }
 ul.sec3{
+    height: 40rem;
     display: flex;
-    text-align: center;
+    flex-direction: row;
     width: 100%;
     padding-left: 0;
+    margin: auto 0;
 }
 li.values{
     width: 30%;
     padding: 0 1.5rem;
     list-style: none;
     float: left;
+    display:inline-block;
+    margin: auto 0;
 }
 img.valImg{
     width: 20rem;
 }
-p.vText{
+#sec4{
+    background-color: dodgerblue;
+    text-align: center;
+}
+#otros, p.pOtro{
+   color: white;
     
 }
+#otros{
+    padding: 2rem
+}
+p.vText, p.pOtro {
+   font-family: "Lato", sans-serif;
+}
+p.pOtro{
+    
+    border-top: white 1px solid;
+    margin: 0;
+    padding: 1rem 0;
+    }
 /*Footer*/
 #footer{
     background-color: #150811;
@@ -205,4 +233,5 @@ p.vText{
     padding-top: 1rem;
     font-family: "Lato", sans-serif;
     font-size: .7rem;
+    margin: 0;
 }

@@ -6,7 +6,8 @@
     opacity:0.15;
     }
     .cls-3{
-    fill:white;
+    fill:burlywood;
+    stroke: black;
     }
     .cls-4{
     fill:#d9e021;
