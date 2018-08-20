@@ -204,21 +204,27 @@ img.valImg{
     background-color: dodgerblue;
     text-align: center;
 }
-#otros, p.pOtro{
+#other{
+    height: 30rem;
+}
+#ulOtro{
+    width: 40%;
+}
+#otros, li.pOtro{
    color: white;
     
 }
 #otros{
     padding: 2rem
 }
-p.vText, p.pOtro {
+p.vText, li.pOtro {
    font-family: "Lato", sans-serif;
 }
-p.pOtro{
-    width: 40%;
+li.pOtro{
     margin: 0;
     padding: 1rem 0;
-    display: inline-block;
+    list-style: none;
+    text-align: left;
     }
 /*Footer*/
 #footer{
