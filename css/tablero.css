@@ -215,10 +215,10 @@ p.vText, p.pOtro {
    font-family: "Lato", sans-serif;
 }
 p.pOtro{
-    
-    border-top: white 1px solid;
+    width: 40%;
     margin: 0;
     padding: 1rem 0;
+    display: inline-block;
     }
 /*Footer*/
 #footer{
