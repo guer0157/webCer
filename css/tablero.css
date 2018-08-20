@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif');
 /*Header*/
 html{
-    overflow-x: hidden;
+/*    overflow-x: hidden;*/
     background-image: url("../img/bground.png");
     background-repeat: no-repeat;
     background-position: right top;
@@ -23,7 +23,6 @@ div#head-container{
 /*tablero original*/
 #tab{
     height: 15rem;
-    padding-left: 5rem;
 }
 /*Tablero cambios*/
 #nav-menu{
@@ -63,11 +62,6 @@ a{
 .one{
     background-color: dodgerblue;
 }
-div.slide-block.two{
-    position: absolute;
-    top:38.6rem;
-    transform: translateX(100%);
-}
 h1{
     font-family: "Noto Serif", "serif";
     letter-spacing: 2px;
@@ -76,27 +70,33 @@ h1{
     margin-top: 0;
     padding-top: 2rem;
 }
-.slide-block{
-    text-align: center;
-}
-
 .translate{
+    width: 100%;
     display: inline-block;
     padding-left: 0;
+
 }
 .translate2{
-    display: inline-block;
+    position: absolute;
+    top:38.6rem;
+    transform: translateX(200%);
+    width: 100%;
     padding-left: 0;
 }
 #serv2{
     display: inline-block;
 }
 li#text1, li#img1{
-    width: 40%;
     display: inline-block;
     list-style: none;
+    padding-right: 4rem;
+}
+li#img1{
+    width:40%;
+    text-align: right;
 }
 li#text1{
+    width:40%;
     text-align: left;
     vertical-align: top;
     color: white;
@@ -104,17 +104,25 @@ li#text1{
     letter-spacing: 1px;
 }
 li#text2, li#img2{
-    width: 40%;
     display: inline-block;
     list-style: none;
 }
+li#img2{
+    text-align: left;
+}
 li#text2{
+    width: 40%;
     text-align: left;
     vertical-align:top;
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
-    padding-left: 3rem;
-    
+    color: white;
+}
+li#text1>p{
+    line-height: 2rem;
+}
+li#text1>h3, li#text2>h3{
+    color: #ffe100;
 }
 li#img2,{
     text-align: left;
@@ -163,26 +171,38 @@ padding-left: 0;
     transform: translateX(0%);
 }
 /*Valores*/
-#valores{
+section#valores{
     text-align: center;
 }
 ul.sec3{
-    padding-left: 0;
+    display: flex;
     text-align: center;
+    width: 100%;
+    padding-left: 0;
 }
 li.values{
     width: 30%;
+    padding: 0 1.5rem;
     list-style: none;
-    display: inline-block;
+    float: left;
 }
 img.valImg{
     width: 20rem;
-    display: inline-block;
 }
 p.vText{
-    display: inline-block;
+    
 }
 /*Footer*/
 #footer{
     background-color: #150811;
+    margin: 0;
+    height:3rem;
+    text-align: center;
+    vertical-align: middle;
+}
+#footer>p{
+    color: white;
+    padding-top: 1rem;
+    font-family: "Lato", sans-serif;
+    font-size: .7rem;
 }
