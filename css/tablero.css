@@ -11,14 +11,21 @@ body{
 }
 #header{
     background-color: rgba(0, 0,0, .7);
-    text-align: center;
     width: 100%;
     height: 30rem;
 }
 div#head-container{
     display: inline-block;
+    width: 100%;
     padding: 3rem;
     margin-top: 8rem;
+}
+#divAllday{
+    width: 20%;
+    float: left;
+}
+#allday{
+    text-align: center;
 }
 /*tablero original*/
 #tab{
@@ -51,8 +58,9 @@ a{
 }
 /*logo*/
 #logo{
+    width: 80%;
     height: 10rem;
-    position: relative;
+    display: inline-block;
 }
 /*body*/
 .container{
